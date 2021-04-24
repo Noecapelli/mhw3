@@ -40,7 +40,7 @@ function onSaleJson(json){
 
 function apinew() {
 
-    fetch('http://api.mediastack.com/v1/news?access_key=' + videogamenewsapi+ '&categories=technology&languages=en').then(onResponse).then(onSaleJson);
+    fetch('http://api.mediastack.com/v1/news?access_key=' + videogamenewsapi+ '&categories=technology&languages=en&keywords=video games').then(onResponse).then(onSaleJson);
 }
 
 const videogamenewsapi = '4e665c71e73acc314b564f95863bbe94';
