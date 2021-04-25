@@ -1,0 +1,245 @@
+﻿body {
+    color: black;
+    font-family: 'Raleway', Bahnschrift;
+    font-size: 1.2em;
+    
+    margin: 0;
+}
+a {
+   text-decoration:none;
+}
+    a.buttons {
+        padding: 7px 10px;
+        border: 2px ridge white;
+        border-radius: 100px;
+        text-transform: uppercase;
+        color: white;
+      
+    }
+h1 a.buttons {
+    padding: 5px 7px;
+    font-size:.7em;
+        }
+a.buttons:hover {
+    background-color: white;
+    color: black;
+}
+#links a {
+    margin: 10px; 
+    color:white;
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+header h1  {
+    font-weight: normal;
+    text-align: center;
+    font-style:normal;
+    z-index: 1;
+
+}
+    header h1 em {
+        
+        font-style: normal;
+        font-size: 3em;
+        text-transform:capitalize;
+    }
+header nav {
+    background-color: rgba(0,0,0,0.86);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: .9em;
+    text-transform: capitalize;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1px;
+    padding:0px;
+    height:60px;
+}
+
+nav div img{
+    position:relative;
+    top:2px;
+    margin-right:15px;
+    height:40px;
+   
+    
+}
+header {
+    background-image: url(https://cdn.dribbble.com/users/808936/screenshots/3756466/pacman-dribbble.gif);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+@media (max-width: 500px) {
+    header {
+        height: 500px;
+        line-height: 1;
+    }
+}
+
+
+#ricondizionamento,#details  {
+    display: flex;
+    justify-content: space-between;
+   
+   
+}
+
+    
+    #ricondizionamento img,#details img {
+        width:90%;
+        margin-top:70px;
+        margin-bottom:200px;
+    }
+    #details img:hover{
+        width:100%;
+    }
+
+    section {
+        text-align: center;
+    }
+
+        section h1 {
+            margin-top: 80px;
+            margin-bottom: 100px;
+            font-size: 2.5em;
+            text-transform: capitalize;
+            font-weight:500;
+        }
+
+    #new{
+        background-image: url(https://thumbs.gfycat.com/AdorableDelayedBengaltiger-size_restricted.gif);
+        background-size: cover;
+        background-position: center;
+        height: 700px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+
+#console {
+    background-image: url(https://cdn.dribbble.com/users/23582/screenshots/3404360/nintendo_switch_animation_with_tv.gif);
+    background-size: cover;
+    background-position: center;
+    height: 780px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    
+}
+   
+    
+  #ricondizionamento a, #console a {
+        color: dimgray;
+  
+        text-transform: uppercase;
+       text-decoration:underline;
+        align-items: flex-start;
+        
+        font-weight: 600;
+        padding: 3px;
+    }
+ 
+#ricondizionamento a:hover,#console a:hover{
+   color:black;
+}
+@media (max-width: 600px) {
+    #console,#new {
+        height:400px;
+        line-height: 1.2;
+    }
+    #ricondizionamento a,#console a{
+        font-size:.9em;
+    }
+     section h1 {
+        margin-top: 10px;
+        font-size: 1.5em;
+    }
+   
+}
+#console h1{
+    margin-bottom:3px;
+}
+#ricondizionamento p {
+    text-transform:capitalize;
+    
+}
+#news{
+
+margin:20px;
+margin-bottom:30px;
+}
+#news div{margin-bottom:20px;}
+#news a{
+    color:black;
+    font-style:normal;
+    text-transform:uppercase;
+    
+}
+#news a:hover{
+    font-weight:800;
+}
+footer {
+    background-color: rgba(0,0,0,0.83);
+    color: rgba(255, 255, 255, .8);
+    text-align:center;
+    text-transform:capitalize;
+    padding:20px;
+    
+    
+}
+    footer img:hover{
+        border:2px solid dimgrey;
+        border-radius:100px;
+    }
+
+    footer em {
+        font-style: normal;
+        color: dimgrey;
+    }
+
+#menu {
+    display: none;
+}
+
+    #menu div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+    }
+@media (max-width: 850px) {
+    #links {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+}
